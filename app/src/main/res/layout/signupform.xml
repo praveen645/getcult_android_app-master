@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgg"
+    android:orientation="vertical"
+    android:paddingLeft="25dp"
+
+    android:paddingTop="50dp"
+    android:paddingRight="25dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="15dp"
+        app:cardBackgroundColor="@color/colorPrimary">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:text="Signup"
+                android:textSize="40dp"
+                android:textStyle="bold"
+
+                />
+
+            <EditText
+                android:id="@+id/nameSignup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Name*"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/emailSignup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Email*"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/passwordSignup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter password*"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/collegeSignup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="College*"
+                 />
+
+            <EditText
+                android:id="@+id/postgraduationSignup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="postgraduation (if any)"
+                 />
+
+
+            <EditText
+                android:id="@+id/portfolioSignup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="LinkedIn or any"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/usernameSignup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="enter a nickname to be used as your username*"
+                />
+
+            <android.support.v7.widget.AppCompatMultiAutoCompleteTextView
+                android:id="@+id/fieldsOfInterestSignup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="enter your interested fields"
+                android:completionThreshold="1"/>
+
+
+            <Button
+                android:id="@+id/submitSignup"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="bottom|center"
+                android:text="OK"
+                android:background="#FFFF"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</android.support.v4.widget.NestedScrollView>
